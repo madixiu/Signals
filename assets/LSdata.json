@@ -1,0 +1,46 @@
+{
+  "liq": {
+    "binance_futures": {
+      "longs": 2018934.14025,
+      "info": {
+        "e": "Binance Futures",
+        "symbol": "BTC",
+        "logo": "https://www.cryptometer.io/img/exchange/binance_futures.png"
+      },
+      "shorts": 2292469.63098
+    },
+    "bitfinex": {
+      "longs": 16965.63268945,
+      "info": {
+        "e": "BitFinex",
+        "symbol": "BTC",
+        "logo": "https://www.cryptometer.io/img/exchange/bitfinex.png"
+      }
+    },
+    "bitmex": {
+      "longs": 3560000,
+      "info": {
+        "e": "BitMex",
+        "symbol": "XBT",
+        "logo": "https://www.cryptometer.io/img/exchange/bitmex.png"
+      }
+    },
+    "bybit": {
+      "longs": 1332,
+      "info": {
+        "e": "Bybit",
+        "symbol": "BTC",
+        "logo": "https://www.cryptometer.io/img/exchange/bybit.png"
+      },
+      "shorts": 160
+    },
+    "deribit": {
+      "longs": 4030,
+      "info": {
+        "e": "Deribit",
+        "symbol": "BTC",
+        "logo": "https://www.cryptometer.io/img/exchange/deribit.png"
+      }
+    }
+  }
+}
