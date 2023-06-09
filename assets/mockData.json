@@ -1,0 +1,48 @@
+[
+  {
+    "name": "cryptometerio",
+    "logo": "https://www.cryptometer.io/img/logo.png",
+    "Longs": 10395988,
+    "Shorts": 8986480
+  },
+  {
+    "name": "alternative",
+    "logo": "https://alternative.me/images/alternative-me-logo.png",
+    "index": 28
+  },
+  {
+    "name": "Binance",
+    "logo": "https://s2.coinmarketcap.com/static/img/exchanges/64x64/270.png",
+    "Longs": 154535600,
+    "Shorts": 161938200
+  },
+  {
+    "name": "Bybit",
+    "logo": "https://s2.coinmarketcap.com/static/img/exchanges/64x64/521.png",
+    "Longs": 178065167,
+    "Shorts": 178815152
+  },
+  {
+    "name": "Kucoin",
+    "logo": "https://s2.coinmarketcap.com/static/img/exchanges/64x64/311.png",
+    "Longs": 30914,
+    "Shorts": 1233
+  },
+  {
+    "name": "Kraken",
+    "logo": "https://s2.coinmarketcap.com/static/img/exchanges/64x64/24.png",
+    "Longs": 31982,
+    "Shorts": 30785
+  },
+  {
+    "name": "Bitmex",
+    "logo": "https://s2.coinmarketcap.com/static/img/exchanges/64x64/157.png",
+    "Longs": 8648,
+    "Shorts": 9139
+  },
+  {
+    "name": "AllSpotMarkets",
+    "Buy": 12483,
+    "Sell": 13508
+  }
+]

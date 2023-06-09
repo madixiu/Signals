@@ -1,14 +1,32 @@
 import { View, Text,StyleSheet } from 'react-native'
 import React from 'react'
-import LongShortView from './LongShortRatio/LongShortView'
+import LongsShortsBar from './LongShortRatio/LongsShortsBar'
 
-const Card = (props) => {
+const BuySellCard = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text>Title</Text>
+        <Text>All spot markets</Text>
       </View>
-      <LongShortView />
+      <View style={{padding:10}}>
+        <View style={{justifyContent: 'space-between',flexDirection:'row'}}>
+          <View>
+            <Text>Buy</Text>
+          </View>
+          <View>
+            <Text>Buy</Text>
+          </View>
+        </View>
+        <LongsShortsBar Long={64} Short={36}/>
+        <View style={{justifyContent: 'space-between',flexDirection:'row'}}>
+          <View>
+            <Text>Sell</Text>
+          </View>
+          <View>
+            <Text>Sell</Text>
+          </View>
+        </View>
+      </View>
     </View>
   )
 }
@@ -29,4 +47,4 @@ const styles = StyleSheet.create({
     paddingHorizontal:10
   }
 });
-export default Card
+export default BuySellCard

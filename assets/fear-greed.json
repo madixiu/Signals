@@ -1,0 +1,19 @@
+{
+  "name": "Fear and Greed Index",
+  "now": {
+    "value": "53",
+    "value_classification": "Neutral",
+    "timestamp": "1686096000",
+    "time_until_update": "27769"
+  },
+  "yesterday": {
+    "value": "44",
+    "value_classification": "Fear",
+    "timestamp": "1686009600"
+  },
+  "lastWeek": {
+    "value": "52",
+    "value_classification": "Neutral",
+    "timestamp": "1685577600"
+  }
+}
