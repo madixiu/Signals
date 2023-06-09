@@ -4,7 +4,6 @@ import React from 'react'
 
 function indexColor(index) {
   index = parseInt(index)
-  console.log(index);
   let color = '';
   if (0<=index && index <11)
   color = '#da755a';
@@ -30,7 +29,6 @@ function indexColor(index) {
   return color;
 }
 const FearAndGreedCard = (props) => {
-  console.log(indexColor(props.data.value));
   return (
     <View style={styles.container}>
       <View style={styles.header}>

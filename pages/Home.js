@@ -31,7 +31,7 @@ const Home = () => {
     axios.get(url)
       .then((res) => {
         setData(res.data.now);
-        console.log(res.data.now);
+        // console.log(res.data.now);
         setLoading(false); 
       })
       .catch((err) => {
@@ -47,7 +47,12 @@ const Home = () => {
     <Text>Loading...</Text>  
   </View>
   )
-
+  else if (error)
+  return(
+    <View style={{alignItems: 'center',flex:1,justifyContent: 'center',}}>
+    <Text style={{color:'red'}}>Error...</Text>  
+  </View>
+  )
   else 
   return (
     <View style={styles.container}>
