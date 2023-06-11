@@ -16,13 +16,13 @@ export default function App() {
       <NavigationContainer>
         <Tab.Navigator initialRouteName='List' screenOptions={{ headerShown: false }}>
             <Tab.Screen name="Home" component={Home} options={{ tabBarIcon: ({color,size}) => (
-                <FontAwesome5 name="home" color={'red'} size={16} />
+                <FontAwesome5 name="home" color={'#001b2d'} size={16} />
             )}} />
             <Tab.Screen name="List" component={List} options={{ tabBarIcon: ({color,size}) => (
-                <FontAwesome5 name="coins" color={'red'} size={16} />
+                <FontAwesome5 name="coins" color={'#001b2d'} size={16} />
                 )}} />
               <Tab.Screen name="Signal" component={Signal} options={{ tabBarIcon: ({color,size}) => (
-                <FontAwesome5 name="coins" color={'red'} size={16} />
+                <FontAwesome5 name="coins" color={'#001b2d'} size={16} />
                 )}} />
         </Tab.Navigator>
       </NavigationContainer>

@@ -12,3 +12,11 @@ export function priceOptimizer(input) {
   else number = input
   return "$"+ number
 }
+
+export function bigNumberOptimizer(input) {
+  let number
+  if (input > 1000 )
+   number = input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  else number = input
+  return number
+}

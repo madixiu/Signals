@@ -51,7 +51,7 @@ const FearAndGreedCard = (props) => {
 
 const styles = StyleSheet.create({
   container:{
-    width:'42%',
+    width:'46%',
     backgroundColor:'gainsboro',
     borderRadius:'8px',
   },

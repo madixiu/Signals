@@ -72,7 +72,7 @@ const Home = () => {
       </View>
       <View style={styles.liqViewContainer}>
         <LongShortCard name={jsonData[6].name} logo={jsonData[6].logo} longs={jsonData[6].Longs} shorts={jsonData[6].Shorts}></LongShortCard>
-        <BuySellCard></BuySellCard>
+        <BuySellCard buys={jsonData[7].Buy} sells={jsonData[7].Sell}></BuySellCard>
       </View>
 
     </View>
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     // justifyContent:'space-around',
     // paddingHorizontal:'51px',
     justifyContent: 'space-around',
-    paddingVertical: 10,
+    paddingVertical: 5,
     // paddingHorizontal:8
 
   }

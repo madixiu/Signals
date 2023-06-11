@@ -1,6 +1,7 @@
 import { View, Text,StyleSheet } from 'react-native'
 import React from 'react'
 import LongsShortsBar from './LongShortRatio/LongsShortsBar'
+import { bigNumberOptimizer } from '../misc/numberOptimizer' 
 
 const BuySellCard = (props) => {
   return (
@@ -14,13 +15,13 @@ const BuySellCard = (props) => {
             <Text>Buy</Text>
           </View>
           <View>
-            <Text>Buy</Text>
+            <Text>{bigNumberOptimizer(props.buys)}</Text>
           </View>
         </View>
         <LongsShortsBar Long={64} Short={36}/>
         <View style={{justifyContent: 'space-between',flexDirection:'row'}}>
           <View>
-            <Text>Sell</Text>
+            <Text>{bigNumberOptimizer(props.sells)}</Text>
           </View>
           <View>
             <Text>Sell</Text>
@@ -35,9 +36,9 @@ const styles = StyleSheet.create({
   container: {
     // flex:1,
         
-    width:'42%',
+    width:'46%',
     backgroundColor:'gainsboro',
-    borderRadius:'8px',
+    borderRadius:'5px',
     // padding: '50px',
     // paddingVertical:40
   },

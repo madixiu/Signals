@@ -1,7 +1,7 @@
 import { View, Text,StyleSheet,Image } from 'react-native'
 import React from 'react'
 import LongsShortsBar from './LongShortRatio/LongsShortsBar'
-
+import { bigNumberOptimizer } from '../misc/numberOptimizer' 
 
 
 const LongShortCard = (props) => {
@@ -39,13 +39,13 @@ const LongShortCard = (props) => {
           <Text>Longs</Text>
         </View>
         <View>
-          <Text>{props.longs}</Text>
+          <Text>{bigNumberOptimizer(props.longs)}</Text>
         </View>
       </View>
       <LongsShortsBar Long={props.longs} Short={props.shorts}/>
       <View style={{justifyContent: 'space-between',flexDirection:'row'}}>
         <View>
-          <Text>{props.shorts}</Text>
+          <Text>{bigNumberOptimizer(props.shorts)}</Text>
         </View>
         <View>
           <Text>Shorts</Text>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   container: {
     // flex:1,
         
-    width:'42%',
+    width:'46%',
     backgroundColor:'gainsboro',
     borderRadius:'8px',
     // padding: '50px',
