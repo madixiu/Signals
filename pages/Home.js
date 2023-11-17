@@ -9,7 +9,7 @@ import jsonData from '../assets/mockData.json'
 
 const getLogos = () => {
   let logos = []
-  for (item of  jsonData){
+  for (item of jsonData){
     if (item.name != 'AllSpotMarkets')
     logos.push(item.logo)
   }
@@ -23,7 +23,7 @@ const Home = () => {
   const [data, setData] = useState();
   //* fear and greed url FOR NOW!
   const url = 'https://api.coin-stats.com/v2/fear-greed';
-  //? getting data here with the hook
+  //* getting data here with the hook
 
   //! WRITE THE AXIOS CALL TO GET THE DATA !!!
   //! HERE ^^^^^^^^^^^^
@@ -81,7 +81,7 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   container:{
-    // backgroundColor:'gainsboro'
+    backgroundColor:'#999'
   },
   liqViewContainer:{
     

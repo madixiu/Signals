@@ -20,3 +20,10 @@ export function bigNumberOptimizer(input) {
   else number = input
   return number
 }
+
+export function absNumber(num) {
+  num = parseFloat(num)
+  if (num < 0)
+  return num * -1
+  else return num
+}

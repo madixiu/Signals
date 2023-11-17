@@ -1,23 +1,36 @@
 import { View, Text,Image,TouchableHighlight,StyleSheet } from 'react-native'
 import React from 'react'
+import {percent_text_color} from '../misc/dynamicStyles'
 
 
-const textColor = (input) => {
-  if (input > 0)
-  return {color: 'green'} 
-  else if (input < 0)
-  return {color: 'red'}
-  else
-  return {color: 'black'}
+const onItemClick = (data,navigation) =>{
+  navigation.navigate('ItemDetail',{data: data})
 }
-
 const ListItem = (props) => {
+
+  const passingData = {
+    symbol: props.symbol,
+    name: props.name,
+    rank: props.rank,
+    price: props.price,
+    change24h: props.change24h,
+    change1h: props.change1h,
+    change7d: props.change7d,
+    volume_24h:props.volume_24h,
+    market_cap:props.market_cap,
+    circulating_supply : props.circulating_supply,
+    total_supply : props.total_supply,
+    max_supply : props.max_supply,
+    last_updated : props.last_updated
+  }
   return (
     <TouchableHighlight
-    activeOpacity={0.6}
-    underlayColor="#999">
+      activeOpacity={0.6}
+      underlayColor="#999"
+      onPress={()=>
+        onItemClick(passingData,props.navigation)}>
 
-<View style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.IconViewStyle}>
           {/* <Image source={{ uri: 'https://s2.coinmarketcap.com/static/img/coins/64x64/'+iconIDfinder(props.symbol)+'.png', cache: 'force-cache'}} 
             style={{ width: 32, height: 32,marginLeft: 10, }}
@@ -43,17 +56,17 @@ const ListItem = (props) => {
         <View style={styles.ChangeViewStyle}>
 
           <View style={styles.ChangeSubViewStyle}>
-            <Text style={[styles.changeTextStyling, textColor(props.change1h)]} >{props.change1h}%</Text>
+            <Text style={[styles.changeTextStyling, percent_text_color(props.change1h)]} >{props.change1h}%</Text>
             <Text style={[styles.changeTextStyling,{marginLeft:5}]}>1H</Text>
           </View>
 
           <View style={styles.ChangeSubViewStyle}>
-            <Text style={[styles.changeTextStyling, textColor(props.change24h)]} >{props.change24h}%</Text>
+            <Text style={[styles.changeTextStyling, percent_text_color(props.change24h)]} >{props.change24h}%</Text>
             <Text style={[styles.changeTextStyling,{marginLeft:5}]}>1D</Text>
           </View>
 
           <View style={styles.ChangeSubViewStyle}>
-            <Text style={[styles.changeTextStyling, textColor(props.change7d)]} >{props.change7d}%</Text>
+            <Text style={[styles.changeTextStyling, percent_text_color(props.change7d)]} >{props.change7d}%</Text>
             <Text style={[styles.changeTextStyling,{marginLeft:5}]}>7D</Text>
           </View>
           

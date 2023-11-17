@@ -14,7 +14,7 @@ export default function App() {
       <StatusBar style="auto" />
       <Header title={'Signals'} />
       <NavigationContainer>
-        <Tab.Navigator initialRouteName='List' screenOptions={{ headerShown: false }}>
+        <Tab.Navigator initialRouteName='Signal' screenOptions={{ headerShown: false }}>
             <Tab.Screen name="Home" component={Home} options={{ tabBarIcon: ({color,size}) => (
                 <FontAwesome5 name="home" color={'#001b2d'} size={16} />
             )}} />
