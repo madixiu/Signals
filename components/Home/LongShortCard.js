@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         
     width:'46%',
     backgroundColor:'gainsboro',
-    borderRadius:'8px',
+    borderRadius:8,
     // padding: '50px',
     // paddingVertical:40
   },

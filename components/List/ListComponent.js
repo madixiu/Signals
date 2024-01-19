@@ -14,7 +14,7 @@ export default function ListComponent(props) {
   
   
   function onRefresh(){
-    console.log('refresh called');
+    // console.log('refresh called');
     // this.setState({refreshing : true})
     setRefreshing(true);
     getData();

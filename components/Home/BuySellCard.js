@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         
     width:'46%',
     backgroundColor:'gainsboro',
-    borderRadius:'5px',
+    borderRadius:5,
     // padding: '50px',
     // paddingVertical:40
   },

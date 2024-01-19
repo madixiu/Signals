@@ -1,12 +1,14 @@
 import React from 'react'
 import { View,StyleSheet,Text } from 'react-native'
 import {itemDataOptimizer} from '../components/misc/dataOptimizer'
-import {percent_text_color,chip_color} from '../components/misc/dynamicStyles.js'
+import {chip_color} from '../components/misc/dynamicStyles.js'
 import { absNumber } from '../components/misc/numberOptimizer'
-import data from '../assets/mockBTCdata.json'
-import Ionicons from '@expo/vector-icons/Ionicons';
+import ImportedData from '../assets/mockBTCdata.json'
+// import Ionicons from '@expo/vector-icons/Ionicons';
+import LineChartComponent from '../components/List/charts/LineChartComponent.js'
+
 export default function Signal(props) {
-  data = itemDataOptimizer(data)
+  const data = itemDataOptimizer(ImportedData)
   return (
     <View style={{backgroundColor:"#999", flex:1}}>
 
@@ -57,6 +59,10 @@ export default function Signal(props) {
         
       </View>
 
+      <View style={styles.chartCard}>
+        <LineChartComponent />
+      </View>
+      {/*// Info Card */}
       <View style={styles.infoCard}>
         <View style={styles.infoRow}>
           <Text style={styles.infoLabel}>Market Cap</Text>
@@ -177,4 +183,14 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
   },
+
+  //chart CARD
+  chartCard: {
+    backgroundColor:'#c8c8c8',
+    alignItems: 'center',
+    marginHorizontal: 10,
+    // marginVertical:10,
+    borderRadius:5,
+    // paddingVertical: 5
+  }
 });

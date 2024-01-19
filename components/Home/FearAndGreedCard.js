@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   container:{
     width:'46%',
     backgroundColor:'gainsboro',
-    borderRadius:'8px',
+    borderRadius:8,
   },
   header:{
     flexDirection:'row',  
